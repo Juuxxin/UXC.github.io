@@ -1,0 +1,28 @@
+body, html{
+    height: 100%;
+    flex: center;
+    align-items: center;
+}
+.contenedor{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    
+}
+.contenedor{
+    align-items: center;
+ 
+}
+
+.caja{
+    padding-top: 50px;
+    background-color: aquamarine;
+    width: 400px;
+    height: 200px;
+    margin: 40px;
+    text-align: center;
+}
+#img2{
+    margin: 20px;
+}

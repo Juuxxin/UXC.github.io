@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    background-color:hotpink;
+    color:white;
+    padding: 20px;
+}
+h2{
+    text-align: center;
+    background-color:darksalmon;
+    color:white;
+    padding: 10px;   
+}
+.Cosmeticos-tr{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    display: grid;
+    margin-left: 10%;
+}
+.cosme-joss img{
+    width: 250px;
+    height: 250px;
+}
+.cosme-joss h3{
+    font-size: 35px;
+    margin: 2%;
+    font-family: cursive;
+    color: white;
+}
+.precio{
+    color: brown !important;
+    font-size: 25px;
+    
+}
+.cosme-joss p{
+    font-size: 25px;
+    margin: 2%;
+    color: white;
+    font-family: cursive;
+}
+.Cosmeticos-tr{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    display: grid;
+    margin-left: 10%;
+}
+.cosme-joss img{
+    width: 250px;
+    height: 250px;
+}
+.cosme-joss h3{
+    font-size: 35px;
+    margin: 2%;
+    font-family: cursive;
+    color: white;
+}
+.precio{
+    color: brown !important;
+    font-size: 25px;
+    
+}
+.cosme-joss p{
+    font-size: 25px;
+    margin: 2%;
+    color: white;
+    font-family: cursive;
+}
+

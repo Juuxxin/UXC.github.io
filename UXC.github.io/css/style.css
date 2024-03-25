@@ -1,0 +1,11 @@
+.cont1{
+    width: 50%;
+    height: 50%;
+    background-color:blueviolet;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+}
+p{
+    text-align: center;
+}

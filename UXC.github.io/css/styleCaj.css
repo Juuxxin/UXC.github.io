@@ -1,0 +1,12 @@
+.con1{
+    width: 20%;
+    height: 20%;
+    background-color: aqua;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+}
+P{
+    text-align: center;
+
+}

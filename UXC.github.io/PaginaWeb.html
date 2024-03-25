@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/scc.css">
+    <title>Vinyl Record Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      
+    <video autoplay muted loop>
+        <source src="img/WhatsApp Video 2024-03-04 at 11.09.00 AM.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <h1>ARKHE Vinyl Record Store</h1>
+    </div>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="vision_mision.html">Vision y Mision</a>
+    </nav>
+    <main>
+      <h2>Bienvenidos a nuestra tienda de albums de vinilo!</h2>
+      <p>Llevamos una amplia selección de discos de vinilo de todos los géneros, incluyendo jazz, rock, clásica y más.</p>
+      <h3>Albums destacados</h3>
+      <div class="container">
+        <div class="vinyl">
+            <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 5.56.48 PM.mp3')" onmouseout="pauseAudio()">
+                <img class="vinyl-img" src="img/InUtero-compressed.jpg" alt="Disco 1">
+                <h2>In Utero</h2>
+                <p>Artista: Nirvana</p>
+                <p>Año: 1993</p>
+                <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+            </div>
+            <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 6.25.04 PM.mp3')" onmouseout="pauseAudio()">
+                <img class="vinyl-img" src="img/igor.jpg" alt="Disco 2">
+                <h2>Igor</h2>
+                <p>Artista: Tyler, The Creator</p>
+                <p>Año: 2019</p>
+                <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+            </div>
+            <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 6.40.40 PM.mp3')" onmouseout="pauseAudio()">
+                <img class="vinyl-img" src="img/saladdays.jpeg" alt="Disco 3">
+                <h2>Salad Days</h2>
+                <p>Artista: Mac DeMarco</p>
+                <p>Año: 2014</p>
+                <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+            </div>
+            <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 6.23.05 PM.mp3')" onmouseout="pauseAudio()">
+              <img class="vinyl-img" src="img/borderline.jpg" alt="Disco 4">
+              <h2>The Slow Rush</h2>
+              <p>Artista: Tame Impala</p>
+              <p>Año: 2020</p>
+              <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+          </div>
+          <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 6.42.25 PM.mp3')" onmouseout="pauseAudio()">
+            <img class="vinyl-img" src="img/theq.jpeg" alt="Disco 5">
+            <h2>The Queen Is Dead</h2>
+            <p>Artista: The Smiths</p>
+            <p>Año: 1986</p>
+            <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+        </div>
+        <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 6.45.21 PM.mp3')" onmouseout="pauseAudio()">
+          <img class="vinyl-img" src="img/mtvun.jpeg" alt="Disco 6">
+          <h2>Nirvana MTV Unplugged</h2>
+          <p>Artista: Nirvana</p>
+          <p>Año: 1994</p>
+          <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+      </div>
+      <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 9.09.54 PM.mp3')" onmouseout="pauseAudio()">
+        <img class="vinyl-img" src="img/am.jpeg" alt="Disco 7">
+        <h2>AM</h2>
+        <p>Artista: Artic Monkeys</p>
+        <p>Año: 2013</p>
+        <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+    </div>
+    <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 9.12.22 PM.mp3')" onmouseout="pauseAudio()">
+      <img class="vinyl-img" src="img/mcdm2.jpeg" alt="Disco 8">
+      <h2>2</h2>
+      <p>Artista: Mac DeMarco</p>
+      <p>Año: 2012</p>
+      <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+  </div>
+  <div class="vinyl-item" onmouseover="playAudio('audio/WhatsApp Audio 2024-03-24 at 9.15.50 PM.mp3')" onmouseout="pauseAudio()">
+    <img class="vinyl-img" src="img/theebends.jpeg" alt="Disco 9">
+    <h2>The Bends</h2>
+    <p>Artista: Radiohead</p>
+    <p>Año: 1995</p>
+    <button class="mute-button" onclick="toggleMute()">Mute/Unmute</button>
+</div>
+
+    </div>
+  </div>
+
+    <script>
+      var audio = new Audio(); 
+      var audioPosition = 0; 
+      var isMuted = false; 
+      function playAudio(src) {
+          audio.src = src; 
+          audio.loop = true; 
+          audio.play(); 
+      }
+      
+      function stopAudio() {
+          audio.pause();
+          audio.currentTime = 0; 
+      }
+      function pauseAudio() {
+            audioPosition = audio.currentTime; 
+            audio.pause(); 
+      }
+      function toggleMute() {
+            isMuted = !isMuted;
+            audio.muted = isMuted; 
+          }
+  </script>
+    
+      <div class="section promotions">
+        <h2>Promociones</h2>
+        <p>¡Oferta especial! Compra 2 discos y obtén un 10% de descuento.</p>
+        <p>Descuento del 20% en discos seleccionados este mes.</p>
+    </div>
+
+
+    <div class="section location">
+        <h2>Ubicación</h2>
+        <p>Nuestra tienda de discos está ubicada en:</p>
+        <p>Calle Principal, #123, Ciudad, País</p>
+    </div>
+
+    
+</div>
+</body>
+</html>
